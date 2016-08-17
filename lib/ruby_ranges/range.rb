@@ -36,7 +36,7 @@ module RubyRanges
 
     private
     def add_range(range)
-      case self.include?(range).to_value
+      case self.include_range?(range).to_value
       when RubyRanges::WhollyIncluded.to_value # self swallows smaller range
         self
       when RubyRanges::InverseWhollyIncluded.to_value # self swallowed by larger range
@@ -51,7 +51,7 @@ module RubyRanges
     end
 
     def subtract_range(range)
-      case self.include?(range).to_value
+      case self.include_range?(range).to_value
       when NilClass # self removed by larger range
         nil
       when TrueClass # self split by wholly inclusive range
