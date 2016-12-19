@@ -1,3 +1,9 @@
+h1. Fork Notes
+
+Use : gem 'ruby_ranges', git: 'git@github.com:pa657/RubyRanges.git', branch: 'master'
+About : Works with Rails 5.0.0.1 and ruby 2.3.3
+
+
 h1. RubyRanges
 
 RubyRanges is my attempt to move names of Rails gems back to sane naming

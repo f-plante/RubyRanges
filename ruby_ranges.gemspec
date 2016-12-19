@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "ruby_ranges/version"
 
 Gem::Specification.new do |s|
-  s.name        = "RubyRanges"
+  s.name        = "ruby_ranges"
   s.version     = RubyRanges::VERSION
   s.authors     = ["Chris Winslett"]
   s.email       = ["christopherwinslett@gmail.com"]
